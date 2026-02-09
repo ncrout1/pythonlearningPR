@@ -1,0 +1,13 @@
+def sub1(fun):
+    def wrapper():
+         fun ()
+   
+    return wrapper
+
+
+@sub1
+def hello():
+    print("you are inside the function")
+    
+hello()
+    
